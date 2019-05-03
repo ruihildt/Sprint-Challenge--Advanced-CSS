@@ -1,21 +1,22 @@
 // Navigation code here
 
 header {
-
     .navigation {
         .displayFlexDirCon(column, center);
         align-items: center;
-
-        padding: 2rem 0;
+        
+        h1 {
+            padding: 2rem;
+        }
 
         nav {
             .displayFlexDirCon(row, center);
-            padding: 2rem 0;
-        }
-
-        nav a {
-            color: @nav-font;
-            padding: 0 2.5rem;
+            padding: 0 0 1rem 0;
+            
+            a {
+                color: @nav-font;
+                padding: 0 2rem;
+            }
         }
     }
 }
