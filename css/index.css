@@ -167,22 +167,30 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-header .navigation {
+header.header-nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header.header-nav .navigation {
+  position: fixed;
+  top: 0;
+  background-color: #F1F1F1;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
-header .navigation h1 {
+header.header-nav .navigation h1 {
   padding: 2rem;
 }
-header .navigation nav {
+header.header-nav .navigation nav {
   display: flex;
   flex-direction: row;
   align-content: center;
   padding: 0 0 1rem 0;
 }
-header .navigation nav a {
+header.header-nav .navigation nav a {
   color: #454A59;
   padding: 0 2rem;
 }
@@ -272,6 +280,7 @@ footer {
   .home .walk .walk-text {
     order: 2;
     width: 100%;
+    padding-top: 2rem;
   }
 }
 .home .walk .walk-text h3 {
@@ -289,6 +298,18 @@ footer {
   border-radius: 0.5rem;
   padding: 0.8rem;
   width: 32%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background-color: #22283A;
+    color: #F1F1F1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    width: 100%;
+  }
 }
 .home .walk .walk-text .btn:hover {
   background-color: #F1F1F1;
