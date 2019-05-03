@@ -1,5 +1,3 @@
-// Mixins Here
-
 .displayFlexDirCon(@flex-dir, @align-content) {
     display: flex;
     flex-direction: @flex-dir;
@@ -11,4 +9,16 @@
     height:@height;
     margin:@margin;
     border-radius:@bord-rad;
+}
+
+.btn(@btn-font-size, @btn-padding, @btn-bord-rad) {
+    background-color: @btn-bg-color;
+    color: @btn-font-color;
+    text-align: center;
+    font-weight: 600;
+
+    // Parameters
+    font-size: @btn-font-size;
+    border-radius: @btn-bord-rad;
+    padding: @btn-padding;
 }
