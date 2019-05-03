@@ -176,6 +176,7 @@ header.header-nav .navigation {
   position: fixed;
   top: 0;
   background-color: #F1F1F1;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -203,6 +204,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 13rem;
 }
 .home .intro div img {
   width: '';
