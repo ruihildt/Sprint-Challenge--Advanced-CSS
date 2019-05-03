@@ -59,8 +59,12 @@
       }
 
       .btn {
-        .btn(1.8rem, 0.8rem, 00.5rem);
-        width: 32%;
+        .btn(1.8rem, 0.8rem, 00.5rem, 32%);
+        
+        &:hover {
+          background-color: @btn-font-color;
+          color: @btn-bg-color;
+        }
       }
     }
 
