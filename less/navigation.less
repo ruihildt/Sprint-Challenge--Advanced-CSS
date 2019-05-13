@@ -1,1 +1,28 @@
-// Navigation code here
+header.header-nav {
+
+    .container();
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        background-color:@sea-shell;
+        border-radius: 1rem;
+
+        .displayFlexDirCon(column, center);
+        align-items: center;
+        
+        h1 {
+            padding: 2rem;
+        }
+
+        nav {
+            .displayFlexDirCon(row, center);
+            padding: 0 0 1rem 0;
+            
+            a {
+                color: @nav-font;
+                padding: 0 2rem;
+            }
+        }
+    }
+}

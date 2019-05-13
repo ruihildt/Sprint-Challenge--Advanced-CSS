@@ -1,1 +1,31 @@
-// Mixins Here
+.container() {
+      max-width: @desktop-width;
+      width: 100%;
+      margin: 0 auto;
+}
+
+.displayFlexDirCon(@flex-dir, @align-content) {
+    display: flex;
+    flex-direction: @flex-dir;
+    align-content: @align-content;
+}
+
+.img(@width, @height, @margin, @bord-rad) {
+    width:@width;
+    height:@height;
+    margin:@margin;
+    border-radius:@bord-rad;
+}
+
+.btn(@btn-font-size, @btn-padding, @btn-bord-rad, @btn-width) {
+    background-color: @btn-bg-color;
+    color: @btn-font-color;
+    text-align: center;
+    font-weight: 600;
+
+    // Parameters
+    font-size: @btn-font-size;
+    border-radius: @btn-bord-rad;
+    padding: @btn-padding;
+    width:@btn-width;
+}
